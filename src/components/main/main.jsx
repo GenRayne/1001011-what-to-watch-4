@@ -127,7 +127,7 @@ const Main = ({headerMovie, movies}) => {
           </ul>
 
           <div className="catalog__movies-list">
-            {movies.map(({id, title: cardTitle}) => <MovieCard key={id} title={cardTitle} />)}
+            {movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
           </div>
 
           <div className="catalog__more">

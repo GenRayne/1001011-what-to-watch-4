@@ -1,7 +1,7 @@
 import React from 'react';
 import {shape, string} from 'prop-types';
 
-const MovieCard = (movie) => {
+const MovieCard = ({movie}) => {
   const {title} = movie;
   return (
     <article className="small-movie-card catalog__movies-card">
