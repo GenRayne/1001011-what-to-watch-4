@@ -3,20 +3,20 @@ import ReactDOM from 'react-dom';
 import App from './components/app/app.jsx';
 
 const MOVIES = [
-  {title: `Fantastic Beasts`},
-  {title: `Bohemian Rhapsody`},
-  {title: `Macbeth`}
+  {id: `1`, title: `Fantastic Beasts`},
+  {id: `2`, title: `Bohemian Rhapsody`},
+  {id: `3`, title: `Macbeth`}
 ];
 
 const someMovie = {
   title: `The Grand Budapest Hotel`,
   genre: `Drama`,
-  releaseYear: `2014`,
+  releaseYear: 2014,
 };
 
 ReactDOM.render(
     <App
-      movie={someMovie}
+      headerMovie={someMovie}
       movies={MOVIES}
     />,
     document.querySelector(`#root`)

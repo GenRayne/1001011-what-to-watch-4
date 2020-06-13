@@ -1,23 +1,24 @@
 import React from 'react';
-import {arrayOf, shape, string} from 'prop-types';
+import {arrayOf, shape, string, number} from 'prop-types';
 import Main from '../main/main.jsx';
 
-const App = ({movie, movies}) => (
+const App = ({headerMovie, movies}) => (
   <Main
-    movie={movie}
+    headerMovie={headerMovie}
     movies={movies}
   />
 );
 
 App.propTypes = {
-  movie: shape({
+  headerMovie: shape({
     title: string.isRequired,
     genre: string.isRequired,
-    releaseYear: string.isRequired,
+    releaseYear: number.isRequired,
   }),
   movies: arrayOf(
       shape({
-        title: string.isRequired
+        id: string.isRequired,
+        title: string.isRequired,
       })
   ),
 };

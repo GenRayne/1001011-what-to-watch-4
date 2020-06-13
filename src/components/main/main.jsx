@@ -1,24 +1,12 @@
 import React from 'react';
-import {arrayOf, shape, string} from 'prop-types';
+import {arrayOf, shape, string, number} from 'prop-types';
+import MovieCard from '../movie-card/movie-card.jsx';
 
-const movieCards = (movies) => {
-  return movies.map((movie) => {
-    const {title} = movie;
-    return (
-      <article key={title} className="small-movie-card catalog__movies-card">
-        <div className="small-movie-card__image">
-          <img src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg" alt="Fantastic Beasts: The Crimes of Grindelwald" width="280" height="175" />
-        </div>
-        <h3 className="small-movie-card__title">
-          <a className="small-movie-card__link" href="movie-page.html">{title}</a>
-        </h3>
-      </article>
-    );
-  });
-};
+const Main = ({headerMovie, movies}) => {
+  const {title, genre, releaseYear} = headerMovie;
 
-const Main = ({movie, movies}) => {
-  const {title, genre, releaseYear} = movie;
+  const movieCards = movies.map(({id, title: cardTitle}) => <MovieCard key={id} title={cardTitle} />);
+
   return (
     <>
       <div className="visually-hidden">
@@ -141,7 +129,7 @@ const Main = ({movie, movies}) => {
           </ul>
 
           <div className="catalog__movies-list">
-            {movieCards(movies)}
+            {movieCards}
           </div>
 
           <div className="catalog__more">
@@ -168,14 +156,15 @@ const Main = ({movie, movies}) => {
 };
 
 Main.propTypes = {
-  movie: shape({
+  headerMovie: shape({
     title: string.isRequired,
     genre: string.isRequired,
-    releaseYear: string.isRequired,
+    releaseYear: number.isRequired,
   }),
   movies: arrayOf(
       shape({
-        title: string.isRequired
+        id: string.isRequired,
+        title: string.isRequired,
       })
   ),
 };
