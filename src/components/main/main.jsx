@@ -5,8 +5,6 @@ import MovieCard from '../movie-card/movie-card.jsx';
 const Main = ({headerMovie, movies}) => {
   const {title, genre, releaseYear} = headerMovie;
 
-  const movieCards = movies.map(({id, title: cardTitle}) => <MovieCard key={id} title={cardTitle} />);
-
   return (
     <>
       <div className="visually-hidden">
@@ -129,7 +127,7 @@ const Main = ({headerMovie, movies}) => {
           </ul>
 
           <div className="catalog__movies-list">
-            {movieCards}
+            {movies.map(({id, title: cardTitle}) => <MovieCard key={id} title={cardTitle} />)}
           </div>
 
           <div className="catalog__more">

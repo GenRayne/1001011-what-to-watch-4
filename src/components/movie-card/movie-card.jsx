@@ -2,9 +2,9 @@ import React from 'react';
 import {shape, string} from 'prop-types';
 
 const MovieCard = (movie) => {
-  const {id, title} = movie;
+  const {title} = movie;
   return (
-    <article key={id} className="small-movie-card catalog__movies-card">
+    <article className="small-movie-card catalog__movies-card">
       <div className="small-movie-card__image">
         <img src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg" alt="Fantastic Beasts: The Crimes of Grindelwald" width="280" height="175" />
       </div>
