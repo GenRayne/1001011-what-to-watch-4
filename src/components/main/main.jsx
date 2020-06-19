@@ -8,6 +8,8 @@ class Main extends PureComponent {
     this.props = props;
   }
 
+  handleCardTitleClick() {}
+
   render() {
     const {headerMovie, movies} = this.props;
     const {title, genre, releaseYear} = headerMovie;
@@ -134,7 +136,7 @@ class Main extends PureComponent {
             </ul>
 
             <div className="catalog__movies-list">
-              {movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
+              {movies.map((movie) => <MovieCard key={movie.id} movie={movie} onTitleClick={this.handleCardTitleClick} />)}
             </div>
 
             <div className="catalog__more">
