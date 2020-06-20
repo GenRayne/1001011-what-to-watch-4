@@ -20,7 +20,7 @@ MovieCard.propTypes = {
     id: string.isRequired,
     title: string.isRequired,
   }),
-  onTitleClick: func,
+  onTitleClick: func.isRequired,
 };
 
 export default MovieCard;
