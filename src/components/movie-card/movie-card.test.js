@@ -9,10 +9,13 @@ const someMovie = {
 
 describe(`render MovieCard`, () => {
   it(`renders MovieCard`, () => {
+    const handleTitleClick = jest.fn();
+
     const tree = renderer
       .create(
           <MovieCard
             movie={someMovie}
+            onTitleClick={handleTitleClick}
           />
       )
       .toJSON();
