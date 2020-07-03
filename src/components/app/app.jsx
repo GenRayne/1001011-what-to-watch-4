@@ -1,12 +1,19 @@
 import React from 'react';
 import {arrayOf, shape, string, number} from 'prop-types';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import Main from '../main/main.jsx';
 
 const App = ({headerMovie, movies}) => (
-  <Main
-    headerMovie={headerMovie}
-    movies={movies}
-  />
+  <BrowserRouter>
+    <Switch>
+      <Route exact path="/">
+        <Main
+          headerMovie={headerMovie}
+          movies={movies}
+        />
+      </Route>
+    </Switch>
+  </BrowserRouter>
 );
 
 App.propTypes = {
@@ -19,6 +26,7 @@ App.propTypes = {
       shape({
         id: string.isRequired,
         title: string.isRequired,
+        picture: string.isRequired,
       })
   ),
 };

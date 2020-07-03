@@ -1,12 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Main from './main.jsx';
-
-const MOVIES = [
-  {id: `1`, title: `Fantastic Beasts`},
-  {id: `2`, title: `Bohemian Rhapsody`},
-  {id: `3`, title: `Macbeth`}
-];
+import {movies} from '../../mocks/movies-test.js';
 
 const someMovie = {
   title: `The Movie`,
@@ -20,7 +15,7 @@ describe(`render Main`, () => {
     .create(
         <Main
           headerMovie={someMovie}
-          movies={MOVIES}
+          movies={movies}
         />
     )
     .toJSON();

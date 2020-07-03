@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
 import {arrayOf, shape, string, number} from 'prop-types';
-import MovieCard from '../movie-card/movie-card.jsx';
+import MovieList from '../movie-list/movie-list.jsx';
 import IconsSprite from '../icons-sprite/icons-sprite.jsx';
 
 class Main extends PureComponent {
@@ -108,9 +108,10 @@ class Main extends PureComponent {
               </li>
             </ul>
 
-            <div className="catalog__movies-list">
-              {movies.map((movie) => <MovieCard key={movie.id} movie={movie} onTitleClick={this.handleCardTitleClick} />)}
-            </div>
+            <MovieList
+              movies={movies}
+              onCardTitleClick={this.handleCardTitleClick}
+            />
 
             <div className="catalog__more">
               <button className="catalog__button" type="button">Show more</button>
@@ -146,6 +147,7 @@ Main.propTypes = {
       shape({
         id: string.isRequired,
         title: string.isRequired,
+        picture: string.isRequired,
       })
   ),
 };
