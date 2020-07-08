@@ -1,12 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app/app.jsx';
-
-const MOVIES = [
-  {id: `1`, title: `Fantastic Beasts`},
-  {id: `2`, title: `Bohemian Rhapsody`},
-  {id: `3`, title: `Macbeth`}
-];
+import {movies} from './mocks/movies.js';
 
 const someMovie = {
   title: `The Grand Budapest Hotel`,
@@ -17,7 +12,7 @@ const someMovie = {
 ReactDOM.render(
     <App
       headerMovie={someMovie}
-      movies={MOVIES}
+      movies={movies}
     />,
     document.querySelector(`#root`)
 );

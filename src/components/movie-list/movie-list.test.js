@@ -1,21 +1,16 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from './app.jsx';
+import MovieList from './movie-list.jsx';
 import {movies} from '../../mocks/movies-test.js';
 
-const someMovie = {
-  title: `The Movie`,
-  genre: `Comedy`,
-  releaseYear: 1999,
-};
-
-describe(`render App`, () => {
-  it(`renders App`, () => {
+describe(`render MovieList`, () => {
+  it(`renders MovieList`, () => {
+    const handleCardTitleClick = jest.fn();
     const tree = renderer
       .create(
-          <App
-            headerMovie={someMovie}
+          <MovieList
             movies={movies}
+            onCardTitleClick={handleCardTitleClick}
           />
       )
       .toJSON();
