@@ -1,7 +1,7 @@
 import React from 'react';
 import {shape, string, func} from 'prop-types';
 
-const MovieCard = ({movie, onTitleClick, onCardMouseEnter, onCardMouseLeave}) => {
+const MovieCard = ({movie, onMovieClick, onCardMouseEnter, onCardMouseLeave}) => {
   const {title, picture} = movie;
 
   const handleCardHover = () => {
@@ -9,7 +9,7 @@ const MovieCard = ({movie, onTitleClick, onCardMouseEnter, onCardMouseLeave}) =>
   };
 
   const handleMovieClick = () => {
-    onTitleClick(movie);
+    onMovieClick(movie);
   };
 
   return (
@@ -36,7 +36,7 @@ MovieCard.propTypes = {
     title: string.isRequired,
     picture: string.isRequired,
   }),
-  onTitleClick: func.isRequired,
+  onMovieClick: func.isRequired,
   onCardMouseEnter: func.isRequired,
   onCardMouseLeave: func.isRequired,
 };

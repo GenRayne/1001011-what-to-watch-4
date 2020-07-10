@@ -193,7 +193,7 @@ Array [
             <span
               className="movie-card__year"
             >
-              1997
+              2014
             </span>
           </p>
           <div
@@ -306,7 +306,7 @@ Array [
             <div
               className="movie-rating__score"
             >
-              0.9
+              5.5
             </div>
             <p
               className="movie-rating__meta"
@@ -314,12 +314,12 @@ Array [
               <span
                 className="movie-rating__level"
               >
-                Bad
+                Good
               </span>
               <span
                 className="movie-rating__count"
               >
-                209
+                999
                  ratings
               </span>
             </p>

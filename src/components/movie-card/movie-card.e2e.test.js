@@ -5,15 +5,15 @@ import {someMovie} from '../../mocks/movies-test.js';
 
 const noopHandler = () => {};
 
-describe(`MovieCard title click`, () => {
-  it(`presses card title`, () => {
-    const handleTitleClick = jest.fn();
+describe(`MovieCard click`, () => {
+  it(`presses card title and image`, () => {
+    const handleMovieClick = jest.fn();
 
     const movieCard = shallow(
         <MovieCard
           key={someMovie.id}
           movie={someMovie}
-          onTitleClick={handleTitleClick}
+          onMovieClick={handleMovieClick}
           onCardMouseEnter={noopHandler}
           onCardMouseLeave={noopHandler}
         />
@@ -22,7 +22,13 @@ describe(`MovieCard title click`, () => {
     const movieCardTitle = movieCard.find(`a.small-movie-card__link`);
     movieCardTitle.simulate(`click`);
 
-    expect(handleTitleClick).toHaveBeenCalledTimes(1);
+    expect(handleMovieClick).toHaveBeenCalledTimes(1);
+
+    const alt = `Poster for: ${someMovie.title}`;
+    const movieCardImage = movieCard.find(`img[alt="${alt}"]`);
+    movieCardImage.simulate(`click`);
+
+    expect(handleMovieClick).toHaveBeenCalledTimes(1);
   });
 
   it(`checks if the onMouseEnter handler gets the movie data and the onMouseLeave gets called`, () => {
@@ -33,7 +39,7 @@ describe(`MovieCard title click`, () => {
         <MovieCard
           key={someMovie.id}
           movie={someMovie}
-          onTitleClick={noopHandler}
+          onMovieClick={noopHandler}
           onCardMouseEnter={handleCardMouseEnter}
           onCardMouseLeave={handleCardMouseLeave}
         />

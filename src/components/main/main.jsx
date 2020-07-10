@@ -108,7 +108,7 @@ class Main extends PureComponent {
 
             <MovieList
               movies={movies}
-              onCardTitleClick={onMovieClick}
+              onMovieClick={onMovieClick}
             />
 
             <div className="catalog__more">
