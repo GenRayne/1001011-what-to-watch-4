@@ -8,17 +8,23 @@ const MovieCard = ({movie, onTitleClick, onCardMouseEnter, onCardMouseLeave}) =>
     onCardMouseEnter(movie);
   };
 
+  const handleMovieClick = () => {
+    onTitleClick(movie);
+  };
+
   return (
     <article
       className="small-movie-card catalog__movies-card"
       onMouseEnter={handleCardHover}
       onMouseLeave={onCardMouseLeave}
     >
-      <div className="small-movie-card__image">
+      <div className="small-movie-card__image" onClick={handleMovieClick}>
         <img src={picture} alt={`Poster for: ${title}`} width="280" height="175" />
       </div>
       <h3 className="small-movie-card__title">
-        <a className="small-movie-card__link" href="movie-page.html" onClick={onTitleClick}>{title}</a>
+        <a className="small-movie-card__link" onClick={handleMovieClick}>
+          {title}
+        </a>
       </h3>
     </article>
   );

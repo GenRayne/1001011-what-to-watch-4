@@ -11,6 +11,7 @@ exports[`render MovieList renders MovieList 1`] = `
   >
     <div
       className="small-movie-card__image"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
@@ -24,8 +25,7 @@ exports[`render MovieList renders MovieList 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         Fantastic Beasts: The Crimes of Grindelwald
       </a>
@@ -38,6 +38,7 @@ exports[`render MovieList renders MovieList 1`] = `
   >
     <div
       className="small-movie-card__image"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: Bohemian Rhapsody"
@@ -51,8 +52,7 @@ exports[`render MovieList renders MovieList 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         Bohemian Rhapsody
       </a>
@@ -65,6 +65,7 @@ exports[`render MovieList renders MovieList 1`] = `
   >
     <div
       className="small-movie-card__image"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: Macbeth"
@@ -78,8 +79,7 @@ exports[`render MovieList renders MovieList 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         Macbeth
       </a>
@@ -92,6 +92,7 @@ exports[`render MovieList renders MovieList 1`] = `
   >
     <div
       className="small-movie-card__image"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: Aviator"
@@ -105,8 +106,7 @@ exports[`render MovieList renders MovieList 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         Aviator
       </a>
@@ -119,6 +119,7 @@ exports[`render MovieList renders MovieList 1`] = `
   >
     <div
       className="small-movie-card__image"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: We need to talk about Kevin"
@@ -132,8 +133,7 @@ exports[`render MovieList renders MovieList 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         We need to talk about Kevin
       </a>
@@ -146,6 +146,7 @@ exports[`render MovieList renders MovieList 1`] = `
   >
     <div
       className="small-movie-card__image"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: What We Do in the Shadows"
@@ -159,8 +160,7 @@ exports[`render MovieList renders MovieList 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         What We Do in the Shadows
       </a>
@@ -173,6 +173,7 @@ exports[`render MovieList renders MovieList 1`] = `
   >
     <div
       className="small-movie-card__image"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: Revenant"
@@ -186,8 +187,7 @@ exports[`render MovieList renders MovieList 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         Revenant
       </a>
@@ -200,6 +200,7 @@ exports[`render MovieList renders MovieList 1`] = `
   >
     <div
       className="small-movie-card__image"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: Johnny English"
@@ -213,8 +214,7 @@ exports[`render MovieList renders MovieList 1`] = `
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         Johnny English
       </a>

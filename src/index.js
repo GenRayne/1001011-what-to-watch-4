@@ -4,9 +4,10 @@ import App from './components/app/app.jsx';
 import {movies} from './mocks/movies.js';
 
 const someMovie = {
+  id: `0`,
   title: `The Grand Budapest Hotel`,
   genre: `Drama`,
-  releaseYear: 2014,
+  year: 2014,
 };
 
 ReactDOM.render(

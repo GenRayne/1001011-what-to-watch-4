@@ -1,18 +1,14 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from './app.jsx';
+import MoviePage from './movie-page.jsx';
 import {movies} from '../../mocks/movies-test.js';
 
-const noopHandler = () => {};
-
-describe(`render App`, () => {
-  it(`renders App`, () => {
+describe(`render MoviePage`, () => {
+  it(`renders MoviePage`, () => {
     const tree = renderer
       .create(
-          <App
-            headerMovie={movies[0]}
-            movies={movies}
-            onMovieClick={noopHandler}
+          <MoviePage
+            movie={movies[0]}
           />
       )
       .toJSON();
@@ -20,3 +16,4 @@ describe(`render App`, () => {
     expect(tree).toMatchSnapshot();
   });
 });
+

@@ -1,14 +1,12 @@
 import React, {PureComponent} from 'react';
-import {arrayOf, shape, string, number} from 'prop-types';
+import {arrayOf, shape, string, number, func} from 'prop-types';
 import MovieList from '../movie-list/movie-list.jsx';
 import IconsSprite from '../icons-sprite/icons-sprite.jsx';
 
 class Main extends PureComponent {
-  handleCardTitleClick() {}
-
   render() {
-    const {headerMovie, movies} = this.props;
-    const {title, genre, releaseYear} = headerMovie;
+    const {headerMovie, movies, onMovieClick} = this.props;
+    const {title, genre, year} = headerMovie;
 
     return (
       <>
@@ -49,7 +47,7 @@ class Main extends PureComponent {
                 <h2 className="movie-card__title">{title}</h2>
                 <p className="movie-card__meta">
                   <span className="movie-card__genre">{genre}</span>
-                  <span className="movie-card__year">{releaseYear}</span>
+                  <span className="movie-card__year">{year}</span>
                 </p>
 
                 <div className="movie-card__buttons">
@@ -110,7 +108,7 @@ class Main extends PureComponent {
 
             <MovieList
               movies={movies}
-              onCardTitleClick={this.handleCardTitleClick}
+              onCardTitleClick={onMovieClick}
             />
 
             <div className="catalog__more">
@@ -141,7 +139,7 @@ Main.propTypes = {
   headerMovie: shape({
     title: string.isRequired,
     genre: string.isRequired,
-    releaseYear: number.isRequired,
+    year: number.isRequired,
   }),
   movies: arrayOf(
       shape({
@@ -150,6 +148,7 @@ Main.propTypes = {
         picture: string.isRequired,
       })
   ),
+  onMovieClick: func.isRequired,
 };
 
 export default Main;

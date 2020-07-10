@@ -189,7 +189,7 @@ Array [
           <h2
             className="movie-card__title"
           >
-            The Movie
+            Fantastic Beasts: The Crimes of Grindelwald
           </h2>
           <p
             className="movie-card__meta"
@@ -197,12 +197,12 @@ Array [
             <span
               className="movie-card__genre"
             >
-              Comedy
+              Drama
             </span>
             <span
               className="movie-card__year"
             >
-              1999
+              2019
             </span>
           </p>
           <div
@@ -372,6 +372,7 @@ Array [
         >
           <div
             className="small-movie-card__image"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
@@ -385,7 +386,6 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               Fantastic Beasts: The Crimes of Grindelwald
@@ -399,6 +399,7 @@ Array [
         >
           <div
             className="small-movie-card__image"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: Bohemian Rhapsody"
@@ -412,7 +413,6 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               Bohemian Rhapsody
@@ -426,6 +426,7 @@ Array [
         >
           <div
             className="small-movie-card__image"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: Macbeth"
@@ -439,7 +440,6 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               Macbeth
@@ -453,6 +453,7 @@ Array [
         >
           <div
             className="small-movie-card__image"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: Aviator"
@@ -466,7 +467,6 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               Aviator
@@ -480,6 +480,7 @@ Array [
         >
           <div
             className="small-movie-card__image"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: We need to talk about Kevin"
@@ -493,7 +494,6 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               We need to talk about Kevin
@@ -507,6 +507,7 @@ Array [
         >
           <div
             className="small-movie-card__image"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: What We Do in the Shadows"
@@ -520,7 +521,6 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               What We Do in the Shadows
@@ -534,6 +534,7 @@ Array [
         >
           <div
             className="small-movie-card__image"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: Revenant"
@@ -547,7 +548,6 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               Revenant
@@ -561,6 +561,7 @@ Array [
         >
           <div
             className="small-movie-card__image"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: Johnny English"
@@ -574,7 +575,6 @@ Array [
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               Johnny English
