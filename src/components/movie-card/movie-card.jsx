@@ -8,7 +8,8 @@ const MovieCard = ({movie, onMovieClick, onCardMouseEnter, onCardMouseLeave}) =>
     onCardMouseEnter(movie);
   };
 
-  const handleMovieClick = () => {
+  const handleMovieClick = (evt) => {
+    evt.preventDefault();
     onMovieClick(movie);
   };
 
@@ -18,9 +19,11 @@ const MovieCard = ({movie, onMovieClick, onCardMouseEnter, onCardMouseLeave}) =>
       onMouseEnter={handleCardHover}
       onMouseLeave={onCardMouseLeave}
     >
-      <div className="small-movie-card__image" onClick={handleMovieClick}>
-        <img src={picture} alt={`Poster for: ${title}`} width="280" height="175" />
-      </div>
+      <a href="#" onClick={handleMovieClick}>
+        <div className="small-movie-card__image">
+          <img src={picture} alt={`Poster for: ${title}`} width="280" height="175" />
+        </div>
+      </a>
       <h3 className="small-movie-card__title">
         <a className="small-movie-card__link" onClick={handleMovieClick}>
           {title}

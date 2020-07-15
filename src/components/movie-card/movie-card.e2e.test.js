@@ -20,13 +20,13 @@ describe(`MovieCard click`, () => {
     );
 
     const movieCardTitle = movieCard.find(`a.small-movie-card__link`);
-    movieCardTitle.simulate(`click`);
+    movieCardTitle.simulate(`click`, {preventDefault: noopHandler});
 
     expect(handleMovieClick).toHaveBeenCalledTimes(1);
 
     const alt = `Poster for: ${someMovie.title}`;
     const movieCardImage = movieCard.find(`img[alt="${alt}"]`);
-    movieCardImage.simulate(`click`);
+    movieCardImage.simulate(`click`, {preventDefault: noopHandler});
 
     expect(handleMovieClick).toHaveBeenCalledTimes(1);
   });

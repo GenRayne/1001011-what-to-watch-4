@@ -9,17 +9,21 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
-      className="small-movie-card__image"
+    <a
+      href="#"
       onClick={[Function]}
     >
-      <img
-        alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
-        height="175"
-        src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
-        width="280"
-      />
-    </div>
+      <div
+        className="small-movie-card__image"
+      >
+        <img
+          alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
+          height="175"
+          src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
+          width="280"
+        />
+      </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
@@ -36,17 +40,21 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
-      className="small-movie-card__image"
+    <a
+      href="#"
       onClick={[Function]}
     >
-      <img
-        alt="Poster for: Bohemian Rhapsody"
-        height="175"
-        src="img/bohemian-rhapsody.jpg"
-        width="280"
-      />
-    </div>
+      <div
+        className="small-movie-card__image"
+      >
+        <img
+          alt="Poster for: Bohemian Rhapsody"
+          height="175"
+          src="img/bohemian-rhapsody.jpg"
+          width="280"
+        />
+      </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
@@ -63,17 +71,21 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
-      className="small-movie-card__image"
+    <a
+      href="#"
       onClick={[Function]}
     >
-      <img
-        alt="Poster for: Macbeth"
-        height="175"
-        src="img/macbeth.jpg"
-        width="280"
-      />
-    </div>
+      <div
+        className="small-movie-card__image"
+      >
+        <img
+          alt="Poster for: Macbeth"
+          height="175"
+          src="img/macbeth.jpg"
+          width="280"
+        />
+      </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
@@ -90,17 +102,21 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
-      className="small-movie-card__image"
+    <a
+      href="#"
       onClick={[Function]}
     >
-      <img
-        alt="Poster for: Aviator"
-        height="175"
-        src="img/aviator.jpg"
-        width="280"
-      />
-    </div>
+      <div
+        className="small-movie-card__image"
+      >
+        <img
+          alt="Poster for: Aviator"
+          height="175"
+          src="img/aviator.jpg"
+          width="280"
+        />
+      </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
@@ -117,17 +133,21 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
-      className="small-movie-card__image"
+    <a
+      href="#"
       onClick={[Function]}
     >
-      <img
-        alt="Poster for: We need to talk about Kevin"
-        height="175"
-        src="img/we-need-to-talk-about-kevin.jpg"
-        width="280"
-      />
-    </div>
+      <div
+        className="small-movie-card__image"
+      >
+        <img
+          alt="Poster for: We need to talk about Kevin"
+          height="175"
+          src="img/we-need-to-talk-about-kevin.jpg"
+          width="280"
+        />
+      </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
@@ -144,17 +164,21 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
-      className="small-movie-card__image"
+    <a
+      href="#"
       onClick={[Function]}
     >
-      <img
-        alt="Poster for: What We Do in the Shadows"
-        height="175"
-        src="img/what-we-do-in-the-shadows.jpg"
-        width="280"
-      />
-    </div>
+      <div
+        className="small-movie-card__image"
+      >
+        <img
+          alt="Poster for: What We Do in the Shadows"
+          height="175"
+          src="img/what-we-do-in-the-shadows.jpg"
+          width="280"
+        />
+      </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
@@ -171,17 +195,21 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
-      className="small-movie-card__image"
+    <a
+      href="#"
       onClick={[Function]}
     >
-      <img
-        alt="Poster for: Revenant"
-        height="175"
-        src="img/revenant.jpg"
-        width="280"
-      />
-    </div>
+      <div
+        className="small-movie-card__image"
+      >
+        <img
+          alt="Poster for: Revenant"
+          height="175"
+          src="img/revenant.jpg"
+          width="280"
+        />
+      </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
@@ -198,17 +226,21 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
-      className="small-movie-card__image"
+    <a
+      href="#"
       onClick={[Function]}
     >
-      <img
-        alt="Poster for: Johnny English"
-        height="175"
-        src="img/johnny-english.jpg"
-        width="280"
-      />
-    </div>
+      <div
+        className="small-movie-card__image"
+      >
+        <img
+          alt="Poster for: Johnny English"
+          height="175"
+          src="img/johnny-english.jpg"
+          width="280"
+        />
+      </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >

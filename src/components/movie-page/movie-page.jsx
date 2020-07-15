@@ -1,35 +1,12 @@
 import React from 'react';
 import IconsSprite from '../icons-sprite/icons-sprite.jsx';
-import {shape, string, number, array} from 'prop-types';
+import {shape, string, number, array, func} from 'prop-types';
+import {getRatingLevel} from '../../utils.js';
+import MovieList from '../movie-list/movie-list.jsx';
+import PageContent from '../page-content/page-content.jsx';
+import {movies} from '../../mocks/movies.js';
 
-const RatingLevel = {
-  BAD: `Bad`,
-  NORMAL: `Normal`,
-  GOOD: `Good`,
-  VERY_GOOD: `Very good`,
-  AWESOME: `Awesome`
-};
-
-const getRatingLevel = (rating) => {
-  if (rating >= 0 && rating < 3) {
-    return RatingLevel.BAD;
-  }
-  if (rating >= 3 && rating < 5) {
-    return RatingLevel.NORMAL;
-  }
-  if (rating >= 5 && rating < 8) {
-    return RatingLevel.GOOD;
-  }
-  if (rating >= 8 && rating < 10) {
-    return RatingLevel.VERY_GOOD;
-  }
-  if (rating === 10) {
-    return RatingLevel.AWESOME;
-  }
-  return undefined;
-};
-
-const MoviePage = ({movie}) => {
+const MoviePage = ({movie, onMovieClick}) => {
   const {title, genre, year, picture, poster, rating, ratingsNumber, director, actors, description} = movie;
 
   let ratingLevel = getRatingLevel(rating);
@@ -132,63 +109,13 @@ const MoviePage = ({movie}) => {
         </div>
       </section>
 
-      <div className="page-content">
+      <PageContent>
         <section className="catalog catalog--like-this">
           <h2 className="catalog__title">More like this</h2>
 
-          <div className="catalog__movies-list">
-            <article className="small-movie-card catalog__movies-card">
-              <div className="small-movie-card__image">
-                <img src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg" alt="Fantastic Beasts: The Crimes of Grindelwald" width="280" height="175" />
-              </div>
-              <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Fantastic Beasts: The Crimes of Grindelwald</a>
-              </h3>
-            </article>
-
-            <article className="small-movie-card catalog__movies-card">
-              <div className="small-movie-card__image">
-                <img src="img/bohemian-rhapsody.jpg" alt="Bohemian Rhapsody" width="280" height="175" />
-              </div>
-              <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Bohemian Rhapsody</a>
-              </h3>
-            </article>
-
-            <article className="small-movie-card catalog__movies-card">
-              <div className="small-movie-card__image">
-                <img src="img/macbeth.jpg" alt="Macbeth" width="280" height="175" />
-              </div>
-              <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Macbeth</a>
-              </h3>
-            </article>
-
-            <article className="small-movie-card catalog__movies-card">
-              <div className="small-movie-card__image">
-                <img src="img/aviator.jpg" alt="Aviator" width="280" height="175" />
-              </div>
-              <h3 className="small-movie-card__title">
-                <a className="small-movie-card__link" href="movie-page.html">Aviator</a>
-              </h3>
-            </article>
-          </div>
+          <MovieList movies={movies.slice(0, 4)} onMovieClick={onMovieClick} />
         </section>
-
-        <footer className="page-footer">
-          <div className="logo">
-            <a href="main.html" className="logo__link logo__link--light">
-              <span className="logo__letter logo__letter--1">W</span>
-              <span className="logo__letter logo__letter--2">T</span>
-              <span className="logo__letter logo__letter--3">W</span>
-            </a>
-          </div>
-
-          <div className="copyright">
-            <p>© 2019 What to watch Ltd.</p>
-          </div>
-        </footer>
-      </div>
+      </PageContent>
     </>
   );
 };
@@ -206,6 +133,7 @@ MoviePage.propTypes = {
     actors: array.isRequired,
     description: string.isRequired,
   }).isRequired,
+  onMovieClick: func.isRequired,
 };
 
 export default MoviePage;

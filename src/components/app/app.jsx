@@ -42,7 +42,10 @@ class App extends PureComponent {
         );
       case ActiveScreen.MOVIE:
         return (
-          <MoviePage movie={this.state.selectedMovie} />
+          <MoviePage
+            movie={this.state.selectedMovie}
+            onMovieClick={this.handleMovieClick}
+          />
         );
       default:
         return undefined;
@@ -58,7 +61,10 @@ class App extends PureComponent {
             {this.renderScreen()}
           </Route>
           <Route exact path="/dev-movie-page">
-            <MoviePage movie={movies[0]} />
+            <MoviePage
+              movie={movies[0]}
+              onMovieClick={this.handleMovieClick}
+            />
           </Route>
         </Switch>
       </BrowserRouter>
