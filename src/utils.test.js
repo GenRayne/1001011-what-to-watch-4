@@ -1,7 +1,7 @@
 import {getRatingLevel} from './utils.js';
 import {RatingLevel} from './const.js';
 
-describe(`test getRatingLevel`, () => {
+describe(`getRatingLevel`, () => {
   it(`gets Bad for 0`, () => {
     expect(getRatingLevel(0)).toEqual(RatingLevel.BAD);
   });
@@ -18,7 +18,9 @@ describe(`test getRatingLevel`, () => {
     expect(getRatingLevel(8)).toEqual(RatingLevel.VERY_GOOD);
   });
 
-  it(`gets Awesome for 10`, () => {
+  it(`gets Awesome for 10 or another value`, () => {
     expect(getRatingLevel(10)).toEqual(RatingLevel.AWESOME);
+    expect(getRatingLevel(999)).toEqual(RatingLevel.AWESOME);
+    expect(getRatingLevel(undefined)).toEqual(RatingLevel.AWESOME);
   });
 });

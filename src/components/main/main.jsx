@@ -3,6 +3,7 @@ import {arrayOf, shape, string, number, func} from 'prop-types';
 import MovieList from '../movie-list/movie-list.jsx';
 import IconsSprite from '../icons-sprite/icons-sprite.jsx';
 import PageContent from '../page-content/page-content.jsx';
+import PageHeader from '../page-header/page-header.jsx';
 
 class Main extends PureComponent {
   render() {
@@ -22,21 +23,7 @@ class Main extends PureComponent {
 
           <h1 className="visually-hidden">WTW</h1>
 
-          <header className="page-header movie-card__head">
-            <div className="logo">
-              <a className="logo__link">
-                <span className="logo__letter logo__letter--1">W</span>
-                <span className="logo__letter logo__letter--2">T</span>
-                <span className="logo__letter logo__letter--3">W</span>
-              </a>
-            </div>
-
-            <div className="user-block">
-              <div className="user-block__avatar">
-                <img src="img/avatar.jpg" alt="User avatar" width="63" height="63" />
-              </div>
-            </div>
-          </header>
+          <PageHeader />
 
           <div className="movie-card__wrap">
             <div className="movie-card__info">

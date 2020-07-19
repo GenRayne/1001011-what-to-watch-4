@@ -13,8 +13,5 @@ export const getRatingLevel = (rating) => {
   if (rating >= 8 && rating < 10) {
     return RatingLevel.VERY_GOOD;
   }
-  if (rating === 10) {
-    return RatingLevel.AWESOME;
-  }
-  return undefined;
+  return RatingLevel.AWESOME;
 };

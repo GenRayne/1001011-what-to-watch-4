@@ -4,7 +4,10 @@ import {shape, string, number, array, func} from 'prop-types';
 import {getRatingLevel} from '../../utils.js';
 import MovieList from '../movie-list/movie-list.jsx';
 import PageContent from '../page-content/page-content.jsx';
+import PageHeader from '../page-header/page-header.jsx';
 import {movies} from '../../mocks/movies.js';
+
+const MOVIES = movies.slice(0, 4);
 
 const MoviePage = ({movie, onMovieClick}) => {
   const {title, genre, year, picture, poster, rating, ratingsNumber, director, actors, description} = movie;
@@ -25,21 +28,7 @@ const MoviePage = ({movie, onMovieClick}) => {
 
           <h1 className="visually-hidden">WTW</h1>
 
-          <header className="page-header movie-card__head">
-            <div className="logo">
-              <a href="main.html" className="logo__link">
-                <span className="logo__letter logo__letter--1">W</span>
-                <span className="logo__letter logo__letter--2">T</span>
-                <span className="logo__letter logo__letter--3">W</span>
-              </a>
-            </div>
-
-            <div className="user-block">
-              <div className="user-block__avatar">
-                <img src="img/avatar.jpg" alt="User avatar" width="63" height="63" />
-              </div>
-            </div>
-          </header>
+          <PageHeader />
 
           <div className="movie-card__wrap">
             <div className="movie-card__desc">
@@ -113,7 +102,7 @@ const MoviePage = ({movie, onMovieClick}) => {
         <section className="catalog catalog--like-this">
           <h2 className="catalog__title">More like this</h2>
 
-          <MovieList movies={movies.slice(0, 4)} onMovieClick={onMovieClick} />
+          <MovieList movies={MOVIES} onMovieClick={onMovieClick} />
         </section>
       </PageContent>
     </>
