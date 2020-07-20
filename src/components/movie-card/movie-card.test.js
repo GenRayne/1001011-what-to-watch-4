@@ -13,7 +13,7 @@ describe(`render MovieCard`, () => {
       .create(
           <MovieCard
             movie={someMovie}
-            onTitleClick={handleTitleClick}
+            onMovieClick={handleTitleClick}
             onCardMouseEnter={handleCardMouseEnter}
             onCardMouseLeave={handleCardMouseLeave}
           />

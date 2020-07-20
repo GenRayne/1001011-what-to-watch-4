@@ -1,11 +1,16 @@
 import React from 'react';
 import {shape, string, func} from 'prop-types';
 
-const MovieCard = ({movie, onTitleClick, onCardMouseEnter, onCardMouseLeave}) => {
+const MovieCard = ({movie, onMovieClick, onCardMouseEnter, onCardMouseLeave}) => {
   const {title, picture} = movie;
 
   const handleCardHover = () => {
     onCardMouseEnter(movie);
+  };
+
+  const handleMovieClick = (evt) => {
+    evt.preventDefault();
+    onMovieClick(movie);
   };
 
   return (
@@ -14,11 +19,13 @@ const MovieCard = ({movie, onTitleClick, onCardMouseEnter, onCardMouseLeave}) =>
       onMouseEnter={handleCardHover}
       onMouseLeave={onCardMouseLeave}
     >
-      <div className="small-movie-card__image">
-        <img src={picture} alt={`Poster for: ${title}`} width="280" height="175" />
-      </div>
+      <a className="small-movie-card__image" href="#" onClick={handleMovieClick}>
+        <img className="small-movie-card__image" src={picture} alt={`Poster for: ${title}`} width="280" height="175" />
+      </a>
       <h3 className="small-movie-card__title">
-        <a className="small-movie-card__link" href="movie-page.html" onClick={onTitleClick}>{title}</a>
+        <a className="small-movie-card__link" onClick={handleMovieClick}>
+          {title}
+        </a>
       </h3>
     </article>
   );
@@ -30,7 +37,7 @@ MovieCard.propTypes = {
     title: string.isRequired,
     picture: string.isRequired,
   }),
-  onTitleClick: func.isRequired,
+  onMovieClick: func.isRequired,
   onCardMouseEnter: func.isRequired,
   onCardMouseLeave: func.isRequired,
 };

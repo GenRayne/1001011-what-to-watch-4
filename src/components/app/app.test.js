@@ -3,19 +3,16 @@ import renderer from 'react-test-renderer';
 import App from './app.jsx';
 import {movies} from '../../mocks/movies-test.js';
 
-const someMovie = {
-  title: `The Movie`,
-  genre: `Comedy`,
-  releaseYear: 1999,
-};
+const noopHandler = () => {};
 
 describe(`render App`, () => {
   it(`renders App`, () => {
     const tree = renderer
       .create(
           <App
-            headerMovie={someMovie}
+            headerMovie={movies[0]}
             movies={movies}
+            onMovieClick={noopHandler}
           />
       )
       .toJSON();

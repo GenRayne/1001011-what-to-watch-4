@@ -189,7 +189,7 @@ Array [
           <h2
             className="movie-card__title"
           >
-            The Movie
+            Fantastic Beasts: The Crimes of Grindelwald
           </h2>
           <p
             className="movie-card__meta"
@@ -197,12 +197,12 @@ Array [
             <span
               className="movie-card__genre"
             >
-              Comedy
+              Drama
             </span>
             <span
               className="movie-card__year"
             >
-              1999
+              2014
             </span>
           </p>
           <div
@@ -370,22 +370,24 @@ Array [
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
-          <div
+          <a
             className="small-movie-card__image"
+            href="#"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
+              className="small-movie-card__image"
               height="175"
               src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
               width="280"
             />
-          </div>
+          </a>
           <h3
             className="small-movie-card__title"
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               Fantastic Beasts: The Crimes of Grindelwald
@@ -397,22 +399,24 @@ Array [
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
-          <div
+          <a
             className="small-movie-card__image"
+            href="#"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: Bohemian Rhapsody"
+              className="small-movie-card__image"
               height="175"
               src="img/bohemian-rhapsody.jpg"
               width="280"
             />
-          </div>
+          </a>
           <h3
             className="small-movie-card__title"
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               Bohemian Rhapsody
@@ -424,22 +428,24 @@ Array [
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
-          <div
+          <a
             className="small-movie-card__image"
+            href="#"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: Macbeth"
+              className="small-movie-card__image"
               height="175"
               src="img/macbeth.jpg"
               width="280"
             />
-          </div>
+          </a>
           <h3
             className="small-movie-card__title"
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               Macbeth
@@ -451,22 +457,24 @@ Array [
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
-          <div
+          <a
             className="small-movie-card__image"
+            href="#"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: Aviator"
+              className="small-movie-card__image"
               height="175"
               src="img/aviator.jpg"
               width="280"
             />
-          </div>
+          </a>
           <h3
             className="small-movie-card__title"
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               Aviator
@@ -478,22 +486,24 @@ Array [
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
-          <div
+          <a
             className="small-movie-card__image"
+            href="#"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: We need to talk about Kevin"
+              className="small-movie-card__image"
               height="175"
               src="img/we-need-to-talk-about-kevin.jpg"
               width="280"
             />
-          </div>
+          </a>
           <h3
             className="small-movie-card__title"
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               We need to talk about Kevin
@@ -505,22 +515,24 @@ Array [
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
-          <div
+          <a
             className="small-movie-card__image"
+            href="#"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: What We Do in the Shadows"
+              className="small-movie-card__image"
               height="175"
               src="img/what-we-do-in-the-shadows.jpg"
               width="280"
             />
-          </div>
+          </a>
           <h3
             className="small-movie-card__title"
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               What We Do in the Shadows
@@ -532,22 +544,24 @@ Array [
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
-          <div
+          <a
             className="small-movie-card__image"
+            href="#"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: Revenant"
+              className="small-movie-card__image"
               height="175"
               src="img/revenant.jpg"
               width="280"
             />
-          </div>
+          </a>
           <h3
             className="small-movie-card__title"
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               Revenant
@@ -559,22 +573,24 @@ Array [
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
-          <div
+          <a
             className="small-movie-card__image"
+            href="#"
+            onClick={[Function]}
           >
             <img
               alt="Poster for: Johnny English"
+              className="small-movie-card__image"
               height="175"
               src="img/johnny-english.jpg"
               width="280"
             />
-          </div>
+          </a>
           <h3
             className="small-movie-card__title"
           >
             <a
               className="small-movie-card__link"
-              href="movie-page.html"
               onClick={[Function]}
             >
               Johnny English
@@ -601,6 +617,7 @@ Array [
       >
         <a
           className="logo__link logo__link--light"
+          href="main.html"
         >
           <span
             className="logo__letter logo__letter--1"

@@ -10,7 +10,7 @@ describe(`render MovieList`, () => {
       .create(
           <MovieList
             movies={movies}
-            onCardTitleClick={handleCardTitleClick}
+            onMovieClick={handleCardTitleClick}
           />
       )
       .toJSON();

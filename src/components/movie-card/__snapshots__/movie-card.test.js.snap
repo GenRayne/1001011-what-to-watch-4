@@ -6,23 +6,25 @@ exports[`render MovieCard renders MovieCard 1`] = `
   onMouseEnter={[Function]}
   onMouseLeave={[MockFunction]}
 >
-  <div
+  <a
     className="small-movie-card__image"
+    href="#"
+    onClick={[Function]}
   >
     <img
       alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
+      className="small-movie-card__image"
       height="175"
       src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
       width="280"
     />
-  </div>
+  </a>
   <h3
     className="small-movie-card__title"
   >
     <a
       className="small-movie-card__link"
-      href="movie-page.html"
-      onClick={[MockFunction]}
+      onClick={[Function]}
     >
       Fantastic Beasts: The Crimes of Grindelwald
     </a>

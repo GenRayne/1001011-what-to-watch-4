@@ -9,23 +9,25 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
+    <a
       className="small-movie-card__image"
+      href="#"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
+        className="small-movie-card__image"
         height="175"
         src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
         width="280"
       />
-    </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         Fantastic Beasts: The Crimes of Grindelwald
       </a>
@@ -36,23 +38,25 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
+    <a
       className="small-movie-card__image"
+      href="#"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: Bohemian Rhapsody"
+        className="small-movie-card__image"
         height="175"
         src="img/bohemian-rhapsody.jpg"
         width="280"
       />
-    </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         Bohemian Rhapsody
       </a>
@@ -63,23 +67,25 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
+    <a
       className="small-movie-card__image"
+      href="#"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: Macbeth"
+        className="small-movie-card__image"
         height="175"
         src="img/macbeth.jpg"
         width="280"
       />
-    </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         Macbeth
       </a>
@@ -90,23 +96,25 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
+    <a
       className="small-movie-card__image"
+      href="#"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: Aviator"
+        className="small-movie-card__image"
         height="175"
         src="img/aviator.jpg"
         width="280"
       />
-    </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         Aviator
       </a>
@@ -117,23 +125,25 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
+    <a
       className="small-movie-card__image"
+      href="#"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: We need to talk about Kevin"
+        className="small-movie-card__image"
         height="175"
         src="img/we-need-to-talk-about-kevin.jpg"
         width="280"
       />
-    </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         We need to talk about Kevin
       </a>
@@ -144,23 +154,25 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
+    <a
       className="small-movie-card__image"
+      href="#"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: What We Do in the Shadows"
+        className="small-movie-card__image"
         height="175"
         src="img/what-we-do-in-the-shadows.jpg"
         width="280"
       />
-    </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         What We Do in the Shadows
       </a>
@@ -171,23 +183,25 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
+    <a
       className="small-movie-card__image"
+      href="#"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: Revenant"
+        className="small-movie-card__image"
         height="175"
         src="img/revenant.jpg"
         width="280"
       />
-    </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         Revenant
       </a>
@@ -198,23 +212,25 @@ exports[`render MovieList renders MovieList 1`] = `
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
   >
-    <div
+    <a
       className="small-movie-card__image"
+      href="#"
+      onClick={[Function]}
     >
       <img
         alt="Poster for: Johnny English"
+        className="small-movie-card__image"
         height="175"
         src="img/johnny-english.jpg"
         width="280"
       />
-    </div>
+    </a>
     <h3
       className="small-movie-card__title"
     >
       <a
         className="small-movie-card__link"
-        href="movie-page.html"
-        onClick={[MockFunction]}
+        onClick={[Function]}
       >
         Johnny English
       </a>
