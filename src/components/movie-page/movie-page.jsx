@@ -26,8 +26,6 @@ const MoviePage = ({movie, onMovieClick}) => {
             <img src={picture} alt={title} />
           </div>
 
-          <h1 className="visually-hidden">WTW</h1>
-
           <PageHeader />
 
           <div className="movie-card__wrap">

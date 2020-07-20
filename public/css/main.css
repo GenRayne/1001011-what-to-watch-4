@@ -1298,6 +1298,7 @@ main {
        object-fit: cover; }
 
 .small-movie-card__image {
+  display: block;
   position: relative;
   z-index: 1;
   height: 175px; }
