@@ -373,19 +373,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
-                height="175"
-                src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -404,19 +402,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Bohemian Rhapsody"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Bohemian Rhapsody"
-                height="175"
-                src="img/bohemian-rhapsody.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/bohemian-rhapsody.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -435,19 +431,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Macbeth"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Macbeth"
-                height="175"
-                src="img/macbeth.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/macbeth.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -466,19 +460,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Aviator"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Aviator"
-                height="175"
-                src="img/aviator.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/aviator.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -905,19 +897,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
-                height="175"
-                src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -936,19 +926,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Bohemian Rhapsody"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Bohemian Rhapsody"
-                height="175"
-                src="img/bohemian-rhapsody.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/bohemian-rhapsody.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -967,19 +955,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Macbeth"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Macbeth"
-                height="175"
-                src="img/macbeth.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/macbeth.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -998,19 +984,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Aviator"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Aviator"
-                height="175"
-                src="img/aviator.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/aviator.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -1437,19 +1421,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
-                height="175"
-                src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -1468,19 +1450,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Bohemian Rhapsody"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Bohemian Rhapsody"
-                height="175"
-                src="img/bohemian-rhapsody.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/bohemian-rhapsody.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -1499,19 +1479,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Macbeth"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Macbeth"
-                height="175"
-                src="img/macbeth.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/macbeth.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -1530,19 +1508,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Aviator"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Aviator"
-                height="175"
-                src="img/aviator.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/aviator.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -1969,19 +1945,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
-                height="175"
-                src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -2000,19 +1974,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Bohemian Rhapsody"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Bohemian Rhapsody"
-                height="175"
-                src="img/bohemian-rhapsody.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/bohemian-rhapsody.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -2031,19 +2003,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Macbeth"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Macbeth"
-                height="175"
-                src="img/macbeth.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/macbeth.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -2062,19 +2032,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Aviator"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Aviator"
-                height="175"
-                src="img/aviator.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/aviator.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -2501,19 +2469,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Fantastic Beasts: The Crimes of Grindelwald"
-                height="175"
-                src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -2532,19 +2498,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Bohemian Rhapsody"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Bohemian Rhapsody"
-                height="175"
-                src="img/bohemian-rhapsody.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/bohemian-rhapsody.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -2563,19 +2527,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Macbeth"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Macbeth"
-                height="175"
-                src="img/macbeth.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/macbeth.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
@@ -2594,19 +2556,17 @@ Array [
           onMouseLeave={[Function]}
         >
           <a
+            className="small-movie-card__image"
             href="#"
             onClick={[Function]}
           >
-            <div
+            <img
+              alt="Poster for: Aviator"
               className="small-movie-card__image"
-            >
-              <img
-                alt="Poster for: Aviator"
-                height="175"
-                src="img/aviator.jpg"
-                width="280"
-              />
-            </div>
+              height="175"
+              src="img/aviator.jpg"
+              width="280"
+            />
           </a>
           <h3
             className="small-movie-card__title"
