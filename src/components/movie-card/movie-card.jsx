@@ -1,35 +1,74 @@
-import React from 'react';
+import React, {PureComponent} from 'react';
 import {shape, string, func} from 'prop-types';
+import VideoPlayer from '../video-player/video-player.jsx';
 
-const MovieCard = ({movie, onMovieClick, onCardMouseEnter, onCardMouseLeave}) => {
-  const {title, picture} = movie;
+class MovieCard extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.movie = this.props.movie;
 
-  const handleCardHover = () => {
-    onCardMouseEnter(movie);
-  };
+    this.state = {
+      activeMovieId: null
+    };
 
-  const handleMovieClick = (evt) => {
+    this.handleCardMouseEnter = this.handleCardMouseEnter.bind(this);
+    this.handleCardMouseLeave = this.handleCardMouseLeave.bind(this);
+    this.handleMovieClick = this.handleMovieClick.bind(this);
+  }
+
+  handleCardMouseEnter() {
+    this.props.onCardMouseEnter(this.movie);
+    this.setState({activeMovieId: this.movie.id});
+  }
+
+  handleCardMouseLeave() {
+    this.props.onCardMouseEnter(this.movie);
+    this.setState({activeMovieId: null});
+  }
+
+  handleMovieClick(evt) {
     evt.preventDefault();
-    onMovieClick(movie);
-  };
+    this.props.onMovieClick(this.movie);
+  }
 
-  return (
-    <article
-      className="small-movie-card catalog__movies-card"
-      onMouseEnter={handleCardHover}
-      onMouseLeave={onCardMouseLeave}
-    >
-      <a className="small-movie-card__image" href="#" onClick={handleMovieClick}>
-        <img className="small-movie-card__image" src={picture} alt={`Poster for: ${title}`} width="280" height="175" />
-      </a>
-      <h3 className="small-movie-card__title">
-        <a className="small-movie-card__link" onClick={handleMovieClick}>
-          {title}
+  render() {
+    const {id, title, picture, preview} = this.movie;
+
+    const isPlaying = this.state.activeMovieId === id;
+
+    return (
+      <article
+        className="small-movie-card catalog__movies-card"
+        onMouseEnter={this.handleCardMouseEnter}
+        onMouseLeave={this.handleCardMouseLeave}
+      >
+        <a className="small-movie-card__image" href="#" onClick={this.handleMovieClick}>
+          {isPlaying
+            ? (
+              <VideoPlayer
+                preview={preview}
+                isPlaying={isPlaying}
+              />
+            ) : (
+              <img
+                className="small-movie-card__image"
+                src={picture}
+                alt={`Poster for: ${title}`}
+                width="280"
+                height="175"
+              />
+            )
+          }
         </a>
-      </h3>
-    </article>
-  );
-};
+        <h3 className="small-movie-card__title">
+          <a className="small-movie-card__link" onClick={this.handleMovieClick}>
+            {title}
+          </a>
+        </h3>
+      </article>
+    );
+  }
+}
 
 MovieCard.propTypes = {
   movie: shape({

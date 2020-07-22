@@ -11,6 +11,7 @@ export const movies = [
     director: `Wes Andreson`,
     actors: [`Bill Murray`, `Edward Norton`, `Jude Law`, `Willem Dafoe`],
     description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi consequatur quia sit voluptate molestiae corrupti natus similique ab eaque dolorem hic, harum eveniet beatae porro nobis laudantium quibusdam eos? Tenetur, beatae. Velit inventore reiciendis voluptates doloribus incidunt, provident ducimus blanditiis quae voluptatum porro dolor optio illo iusto consequuntur ipsum!`,
+    preview: `https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4`,
   },
   {
     id: `2`,
@@ -24,6 +25,7 @@ export const movies = [
     director: `Wes Andreson`,
     actors: [`Bill Murray`, `Edward Norton`, `Jude Law`, `Willem Dafoe`],
     description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi consequatur quia sit voluptate molestiae corrupti natus similique ab eaque dolorem hic, harum eveniet beatae porro nobis laudantium quibusdam eos? Tenetur, beatae. Velit inventore reiciendis voluptates doloribus incidunt, provident ducimus blanditiis quae voluptatum porro dolor optio illo iusto consequuntur ipsum!`,
+    preview: `https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4`,
   },
   {
     id: `3`,
@@ -37,6 +39,7 @@ export const movies = [
     director: `Wes Andreson`,
     actors: [`Bill Murray`, `Edward Norton`, `Jude Law`, `Willem Dafoe`],
     description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi consequatur quia sit voluptate molestiae corrupti natus similique ab eaque dolorem hic, harum eveniet beatae porro nobis laudantium quibusdam eos? Tenetur, beatae. Velit inventore reiciendis voluptates doloribus incidunt, provident ducimus blanditiis quae voluptatum porro dolor optio illo iusto consequuntur ipsum!`,
+    preview: `https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4`,
   },
   {
     id: `4`,
@@ -50,6 +53,7 @@ export const movies = [
     director: `Wes Andreson`,
     actors: [`Bill Murray`, `Edward Norton`, `Jude Law`, `Willem Dafoe`],
     description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi consequatur quia sit voluptate molestiae corrupti natus similique ab eaque dolorem hic, harum eveniet beatae porro nobis laudantium quibusdam eos? Tenetur, beatae. Velit inventore reiciendis voluptates doloribus incidunt, provident ducimus blanditiis quae voluptatum porro dolor optio illo iusto consequuntur ipsum!`,
+    preview: `https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4`,
   },
   {
     id: `5`,
@@ -63,6 +67,7 @@ export const movies = [
     director: `Wes Andreson`,
     actors: [`Bill Murray`, `Edward Norton`, `Jude Law`, `Willem Dafoe`],
     description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi consequatur quia sit voluptate molestiae corrupti natus similique ab eaque dolorem hic, harum eveniet beatae porro nobis laudantium quibusdam eos? Tenetur, beatae. Velit inventore reiciendis voluptates doloribus incidunt, provident ducimus blanditiis quae voluptatum porro dolor optio illo iusto consequuntur ipsum!`,
+    preview: `https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4`,
   },
   {
     id: `6`,
@@ -76,6 +81,7 @@ export const movies = [
     director: `Wes Andreson`,
     actors: [`Bill Murray`, `Edward Norton`, `Jude Law`, `Willem Dafoe`],
     description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi consequatur quia sit voluptate molestiae corrupti natus similique ab eaque dolorem hic, harum eveniet beatae porro nobis laudantium quibusdam eos? Tenetur, beatae. Velit inventore reiciendis voluptates doloribus incidunt, provident ducimus blanditiis quae voluptatum porro dolor optio illo iusto consequuntur ipsum!`,
+    preview: `https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4`,
   },
   {
     id: `7`,
@@ -89,6 +95,7 @@ export const movies = [
     director: `Wes Andreson`,
     actors: [`Bill Murray`, `Edward Norton`, `Jude Law`, `Willem Dafoe`],
     description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi consequatur quia sit voluptate molestiae corrupti natus similique ab eaque dolorem hic, harum eveniet beatae porro nobis laudantium quibusdam eos? Tenetur, beatae. Velit inventore reiciendis voluptates doloribus incidunt, provident ducimus blanditiis quae voluptatum porro dolor optio illo iusto consequuntur ipsum!`,
+    preview: `https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4`,
   },
   {
     id: `8`,
@@ -102,5 +109,6 @@ export const movies = [
     director: `Wes Andreson`,
     actors: [`Bill Murray`, `Edward Norton`, `Jude Law`, `Willem Dafoe`],
     description: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi consequatur quia sit voluptate molestiae corrupti natus similique ab eaque dolorem hic, harum eveniet beatae porro nobis laudantium quibusdam eos? Tenetur, beatae. Velit inventore reiciendis voluptates doloribus incidunt, provident ducimus blanditiis quae voluptatum porro dolor optio illo iusto consequuntur ipsum!`,
+    preview: `https://download.blender.org/durian/trailer/sintel_trailer-480p.mp4`,
   },
 ];
