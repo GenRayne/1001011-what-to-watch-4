@@ -1,15 +1,10 @@
 import React, {PureComponent} from 'react';
-import {shape, string, func} from 'prop-types';
-import VideoPlayer from '../video-player/video-player.jsx';
+import {shape, string, func, bool} from 'prop-types';
 
 class MovieCard extends PureComponent {
   constructor(props) {
     super(props);
     this.movie = this.props.movie;
-
-    this.state = {
-      activeMovieId: null
-    };
 
     this.handleCardMouseEnter = this.handleCardMouseEnter.bind(this);
     this.handleCardMouseLeave = this.handleCardMouseLeave.bind(this);
@@ -18,12 +13,10 @@ class MovieCard extends PureComponent {
 
   handleCardMouseEnter() {
     this.props.onCardMouseEnter(this.movie);
-    this.setState({activeMovieId: this.movie.id});
   }
 
   handleCardMouseLeave() {
-    this.props.onCardMouseEnter(this.movie);
-    this.setState({activeMovieId: null});
+    this.props.onCardMouseLeave();
   }
 
   handleMovieClick(evt) {
@@ -34,7 +27,9 @@ class MovieCard extends PureComponent {
   render() {
     const {id, title, picture, preview} = this.movie;
 
-    const isPlaying = this.state.activeMovieId === id;
+    // У меня тут было условие отображения плеера либо картинки по isPlaying,
+    // но теперь не очень понятно, как это сделать, т.к. оно теперь вычисляется в хоке
+    // const isPlaying = this.state.activeMovieId === id;
 
     return (
       <article
@@ -43,12 +38,9 @@ class MovieCard extends PureComponent {
         onMouseLeave={this.handleCardMouseLeave}
       >
         <a className="small-movie-card__image" href="#" onClick={this.handleMovieClick}>
-          {isPlaying
+          {this.props.isPlaying
             ? (
-              <VideoPlayer
-                preview={preview}
-                isPlaying={isPlaying}
-              />
+              this.props.renderPlayer(id, preview)
             ) : (
               <img
                 className="small-movie-card__image"
@@ -75,10 +67,12 @@ MovieCard.propTypes = {
     id: string.isRequired,
     title: string.isRequired,
     picture: string.isRequired,
-  }),
+  }).isRequired,
+  isPlaying: bool.isRequired,
   onMovieClick: func.isRequired,
   onCardMouseEnter: func.isRequired,
   onCardMouseLeave: func.isRequired,
+  renderPlayer: func.isRequired,
 };
 
 export default MovieCard;
